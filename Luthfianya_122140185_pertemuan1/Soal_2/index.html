@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        input, button {
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Demo Event Handler</h2>
+        <input type="text" id="nama-input" placeholder="Masukkan nama Kalian">
+        <button id="sapa-button">Sapa Saya</button>
+        <div id="sapa-output"></div>
+
+        <h3>Kalkulator Sederhana</h3>
+        <input type="number" id="angka1" placeholder="Angka 1">
+        <input type="number" id="angka2" placeholder="Angka 2">
+        <br>
+        <button onclick="hitung('+')">+</button>
+        <button onclick="hitung('-')">-</button>
+        <button onclick="hitung('*')">×</button>
+        <button onclick="hitung('/')">÷</button>
+        <button onclick="hitung('^')">^</button>
+        <button onclick="hitung('sqrt')">√</button>
+        <button onclick="hitung('%')">%</button>
+        <br>
+        <h3>Hasil:</h3>
+        <div id="hasil-kalkulator"></div>
+    </div>
+</body>
+</html>

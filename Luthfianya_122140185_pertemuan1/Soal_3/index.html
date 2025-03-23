@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi</title>
+    <script defer src="script.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .error { color: red; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <h2>Form Validasi</h2>
+    <form id="myForm">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama">
+        <p id="error-nama" class="error"></p>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <p id="error-email" class="error"></p>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <p id="error-password" class="error"></p>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
